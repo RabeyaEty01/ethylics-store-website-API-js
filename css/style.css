@@ -39,7 +39,7 @@ body {
   transition: 0.6s;
   background-color: rgb(240, 227, 227);
   margin: 10px;
-  height: 33rem;
+  height: 34rem;
   border-radius: 20px;
 }
 .single-product:hover {
@@ -50,6 +50,12 @@ body {
 .product-image {
   width: 150px;
   height: 150px;
+}
+.fa-star-half-alt{
+  color:darkorange;
+}
+.fa-vote-yea{
+  color: forestgreen;
 }
 .cart {
   width: 350px;
