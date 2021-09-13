@@ -41,7 +41,7 @@ body {
   border-radius: 20px;
 }
 .fa-star-half-alt{
-  color:darkorange;
+  color:rgba(255, 140, 0, 0.705);
 }
 .fa-vote-yea{
   color: forestgreen;
