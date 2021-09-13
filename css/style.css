@@ -27,7 +27,7 @@ body {
   background-color: rgba(226, 201, 201, 0.178);
   box-shadow: 2px 2px 4px gray;
   margin: 10px;
-  height: 38rem;
+  height: 40rem;
   border-radius: 20px;
 }
 .single-product:hover {

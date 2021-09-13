@@ -20,9 +20,9 @@ const showProducts = (products) => {
     <img class="product-image" src=${image}></img>
       </div>
       <br>
-      <h4 class="d-flex justify-content-between p-3">
+      <h6 class="d-flex justify-content-between p-3">
       <span><i class="fas fa-star-half-alt"></i><i class="fas fa-star-half-alt"></i><i class="fas fa-star-half-alt"></i> ${product.rating.rate}</span>
-       <span><i class="fas fa-vote-yea"></i> ${product.rating.count}</span></h4>
+       <span><i class="fas fa-vote-yea"></i> ${product.rating.count}</span></h6>
       <h4>${product.title}</h4>
       <p>Category: ${product.category}</p>
       
