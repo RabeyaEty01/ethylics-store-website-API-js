@@ -20,13 +20,17 @@ const showProducts = (products) => {
     <img class="product-image" src=${image}></img>
       </div>
       <br>
+      <h4 class="d-flex justify-content-between p-3">
+      <span><i class="fas fa-star-half-alt"></i><i class="fas fa-star-half-alt"></i><i class="fas fa-star-half-alt"></i> ${product.rating.rate}</span>
+       <span><i class="fas fa-vote-yea"></i> ${product.rating.count}</span></h4>
       <h4>${product.title}</h4>
       <p>Category: ${product.category}</p>
+      
       <h3>Price: $ ${product.price}</h3>
-      <p><i class="fas fa-star-half-alt"></i> ${product.rating.rate}
-       <span>  <i class="fas fa-vote-yea"></i> ${product.rating.count}</span></p>
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success">add to cart</button>
-      <button id="details-btn" class="btn btn-danger">Details</button></div>
+      <div class="d-flex justify-content-between p-3">
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-success"><i class="fas fa-cart-plus"></i> add to cart</button>
+      <button id="details-btn" class="btn btn-danger"><i class="fas fa-info-circle"></i> Details</button></div>
+      </div>
 
       `;
     document.getElementById("all-products").appendChild(div);
