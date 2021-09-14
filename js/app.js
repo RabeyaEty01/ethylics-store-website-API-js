@@ -19,16 +19,14 @@ const showProducts = (products) => {
       <div>
     <img class="product-image" src=${image}></img>
       </div>
-      <br>
-      <h6 class="d-flex justify-content-between p-3">
-      <span><i class="fas fa-star-half-alt"></i><i class="fas fa-star-half-alt"></i><i class="fas fa-star-half-alt"></i> ${product.rating.rate}</span>
-       <span><i class="fas fa-vote-yea"></i> ${product.rating.count}</span></h6>
       <h4>${product.title}</h4>
       <p>Category: ${product.category}</p>
-      
       <h3>Price: $ ${product.price}</h3>
-      <div class="d-flex justify-content-between p-3">
-      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-warning"><i class="fas fa-cart-plus"></i> add to cart</button>
+      <p class="pe-3 ps-3">
+      <span>Rating: <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> (${product.rating.rate})</span></p>
+       <p><i class="fas fa-vote-yea"></i><span class="fw-bold"> ${product.rating.count}</span> Person rated this <br> product</p>
+      <div class="p-3">
+      <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="buy-now btn btn-primary"><i class="fas fa-cart-plus"></i> add to cart</button>
       <button id="details-btn" class="btn btn-success"><i class="fas fa-info-circle"></i> Details</button></div>
       </div>
 

@@ -26,21 +26,25 @@ body {
   transition: 0.6s;
   background-color: rgba(226, 201, 201, 0.178);
   box-shadow: 2px 2px 4px gray;
-  margin: 10px;
-  height: 40rem;
-  border-radius: 20px;
+  margin: 15px;
+  height: 44rem;
+  border-radius: 5px;
 }
 .single-product:hover {
-  box-shadow: 4px 4px 7px gray;
+  box-shadow: 5px 5px 7px gray;
   border-radius: 30px;
   border: 1px solid cyan;
 }
 .product-image {
   width: 98%;
   height: 17rem;
+  padding-bottom: 10px;
   border-radius: 20px;
 }
 .fa-star-half-alt{
+  color:rgba(255, 140, 0, 0.705);
+}
+.fa-star{
   color:rgba(255, 140, 0, 0.705);
 }
 .fa-vote-yea{
